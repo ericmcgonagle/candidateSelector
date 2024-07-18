@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    justify-content: center; /* Horizontal center */
+    align-items: center; /* Vertical center */
+    height: 100vh; /* Full height of viewport */
+  }
+  
+  .centered-text {
+    text-align: center; /* Optional: Center align text */
+  }
+  
+  .mt-2 {
+    margin-top: 0.5rem; /* Adjust margin-top for minimal separation */
+  }
+
+  /* Example custom spacing styles */
+.spacer {
+    margin-top: 1rem;
+  }
+  
+  .vertical-spacer {
+    height: 2rem; /* Adjust height as needed */
+  }
+  
