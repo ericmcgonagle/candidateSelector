@@ -1,24 +1,33 @@
 .container {
-    display: flex;
-    justify-content: center; /* Horizontal center */
-    align-items: center; /* Vertical center */
-    height: 100vh; /* Full height of viewport */
-  }
-  
-  .centered-text {
-    text-align: center; /* Optional: Center align text */
-  }
-  
-  .mt-2 {
-    margin-top: 0.5rem; /* Adjust margin-top for minimal separation */
-  }
+  text-align: center;
+}
 
-  /* Example custom spacing styles */
+.centered-text {
+  text-align: center;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .spacer {
-    margin-top: 1rem;
-  }
-  
-  .vertical-spacer {
-    height: 2rem; /* Adjust height as needed */
-  }
-  
+  margin-top: 1rem;
+}
+
+.mt-4 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+custom-input {
+  width: 300px;
+  max-width: 100%;
+  padding: 8px; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+
+}

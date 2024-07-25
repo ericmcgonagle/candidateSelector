@@ -1,0 +1,17 @@
+.replacement-text {
+    text-decoration: underline;;
+}
+
+.centered-inline-text {
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    display: inline-block;
+  }
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
