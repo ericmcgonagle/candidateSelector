@@ -1,7 +1,12 @@
 <div class="container">
     <p class="centered-text animate-pulse text-2xl">Welcome to Candidate Selector!</p>
     <div class="input-wrapper">
-            <input type="text" class="custom-input" placeholder=" ">
-            <span class="placeholder-text"> Enter Username</span>
+        <input type="text" id="username" class="custom-input" [(ngModel)]="username" name="username" placeholder=" ">
+        <span class="placeholder-text"> Enter Username</span>
+    </div>
+    <div>
+        <form>
+            <button type="button" class="submit-btn">Submit</button>
+        </form>
     </div>
 </div>
