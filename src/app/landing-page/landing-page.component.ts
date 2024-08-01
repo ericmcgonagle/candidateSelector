@@ -12,6 +12,7 @@ declare function greet(): void;
 export class LandingPageComponent {
 
   username: string = '';
+  password: string = '';
 
   // private scriptLoaded = false;
 
