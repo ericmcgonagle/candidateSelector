@@ -1,5 +1,10 @@
 function greet() {
-  alert("Hello");
+  const usernameInput = document.getElementById('username');
+
+  if (usernameInput) {
+    const inputValue = usernameInput.value;
+    alert('Hello ' + inputValue);
+  }
 }
 
 
@@ -12,8 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
     submitButton.addEventListener('click', () => {
       const inputValue = usernameInput.value;
       const password = passwordInput.value;
-      console.log('Username input value:', inputValue);
-      console.log('Password input value', password);
+
+      alert('Hello ' + inputValue);
     });
   }
 });

@@ -4,12 +4,13 @@
         <input type="text" id="username" class="custom-input" [(ngModel)]="username" name="username" placeholder=" ">
         <span class="placeholder-text"> Enter Username</span>
     </div>
-    <div class="input-wrapper">
+    <div class="input-wrapper" *ngIf="showPassword">
         <input type="password" id="password" class="custom-input" [(ngModel)]="password" name="password"
             placeholder=" ">
         <span class="placeholder-text"> Enter Password</span>
     </div>
     <form>
-        <button type="button" class="submit-btn">Submit</button>
+        <button type="button" class="submit-btn" (click)="togglePassword()">Sign in as Admin</button>
+        <button type="button" class="submit-btn" *ngIf="showPassword" (click)="confirmSignIn()">Confirm Sign In</button>
     </form>
 </div>
