@@ -1,9 +1,18 @@
-function greet() {
+function greetAdmin() {
   const usernameInput = document.getElementById('username');
 
   if (usernameInput) {
     const inputValue = usernameInput.value;
-    alert('Hello ' + inputValue);
+    alert('Hello ' + inputValue + "\nPermissions: Admin");
+  }
+}
+
+function greetMember() {
+  const usernameInput = document.getElementById('username');
+
+  if (usernameInput) {
+    const inputValue = usernameInput.value;
+    alert('Hello ' + inputValue + "\nPermissions: Member");
   }
 }
 

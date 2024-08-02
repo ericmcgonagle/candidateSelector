@@ -11,6 +11,7 @@
     </div>
     <form>
         <button type="button" class="submit-btn" (click)="togglePassword()">Sign in as Admin</button>
-        <button type="button" class="submit-btn" *ngIf="showPassword" (click)="confirmSignIn()">Confirm Sign In</button>
+        <button type="button" class="submit-btn" (click)="confirmMemberSignIn()">Continue as General Member</button>
+        <button type="button" class="submit-btn" *ngIf="showPassword" (click)="confirmAdminSignIn()">Confirm Sign In</button>
     </form>
 </div>

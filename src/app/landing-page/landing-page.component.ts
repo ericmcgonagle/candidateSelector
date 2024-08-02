@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, Renderer2, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-declare function greet(): void;
+declare function greetAdmin(): void;
+declare function greetMember(): void;
 
 @Component({
   selector: 'app-landing-page',
@@ -20,7 +21,11 @@ export class LandingPageComponent {
     this.showPassword = true;
   }
 
-  confirmSignIn() {
-    greet();
+  confirmAdminSignIn() {
+    greetAdmin();
+  }
+
+  confirmMemberSignIn() {
+    greetMember();
   }
 }
