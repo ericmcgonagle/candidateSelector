@@ -5,6 +5,6 @@ import { AdminSigninComponent } from './admin-signin/admin-signin.component';
 
 export const routes: Routes = [
     { path: '', component: LandingPageComponent },
-    { path: 'candidate-card', component: CandidateCardPageComponent },
+    { path: 'candidate-card/:memberName', component: CandidateCardPageComponent },
     { path: 'admin-signin', component: AdminSigninComponent}
 ];
