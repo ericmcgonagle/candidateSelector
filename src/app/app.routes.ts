@@ -5,6 +5,6 @@ import { CardComponent } from './card/card.component'
 
 export const routes: Routes = [
     { path: '', component: LandingPageComponent },
-    { path: '', component: CandidateCardPageComponent },
-    { path: '', component: CardComponent }
+    { path: 'card-component', component: CardComponent },
+    { path: 'candidate-card/:memberName', component: CandidateCardPageComponent },
 ];

@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  app-landing-page, app-admin-signin {
+    margin: 0 10px;
+  }
