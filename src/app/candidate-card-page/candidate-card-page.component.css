@@ -1,17 +1,39 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
 .replacement-text {
     text-decoration: underline;;
 }
 
 .centered-inline-text {
     text-align: center;
-    display: inline-block;
     margin: 0;
     display: inline-block;
   }
 
 .center-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+.header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed; */
+    top: 0;
+    padding: 20px;
+    width: 100%;
+}
+
+.spacer-padding {
+    height: 100px;
 }
