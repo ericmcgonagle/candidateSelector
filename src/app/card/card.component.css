@@ -16,4 +16,29 @@
   .card-content {
     font-size: 14px;
   }
+
+  .card-container {
+    transition: box-shadow 0.3s ease, transofmr 0.3s ease;
+    position: relative;
+  }
+
+  .card-container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+
+  .overlay-content{
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 8px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 10;
+  }
   

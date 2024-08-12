@@ -12,7 +12,6 @@ function greetMember() {
 
   if (usernameInput) {
     const inputValue = usernameInput.value;
-    alert('Hello ' + inputValue + "\nPermissions: Member");
   }
 }
 

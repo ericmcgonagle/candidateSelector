@@ -1,18 +1,16 @@
 import { Component, Input } from '@angular/core';
+import { OverlayModule } from '@angular/cdk/overlay';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-card',
   standalone: true,
+  imports: [CommonModule, OverlayModule],
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
   @Input() title: string = '';
   @Input() content: string = '';
-
-  cards = [
-    { title: 'Sid Venkatraman', content: './assets/images/sidHeadshot.jpeg' },
-    { title: 'Eric McGonagle', content: './assets/images/ericHeadshot.jpeg' },
-    { title: 'Andrew Lin', content: './assets/images/linHeadshot.jpg' }
-  ];
+  isHovered = false;
 }
