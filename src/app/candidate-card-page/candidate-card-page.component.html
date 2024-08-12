@@ -8,6 +8,8 @@
     <!-- <div class="spacer-padding"></div> -->
 
     <div class="center-container">
-        <app-card [title]="'Sid Venkatraman'" [content]="'./assets/images/sidHeadshot.jpeg'"></app-card>
+        <ng-container *ngFor="let card of cards">
+            <app-card [title]="card.title" [content]="card.content"></app-card>
+        </ng-container>
     </div>
 </body>

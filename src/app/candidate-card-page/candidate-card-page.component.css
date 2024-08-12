@@ -17,10 +17,12 @@ html, body {
 
 .center-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    gap: 16px;
 }
 
 .header-container{
@@ -36,4 +38,18 @@ html, body {
 
 .spacer-padding {
     height: 100px;
+}
+
+.card {
+    flex: 1 1 calc(33.333% - 32px);
+    max-width: calc(33.333% - 32px);
+    box-sizing: border-box;
+    padding: 16px;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        flex: 1 1 calc(100% - 32px);
+        max-width: calc(100% - 32px);
+    }
 }
