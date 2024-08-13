@@ -2,8 +2,11 @@ import { CommonModule } from '@angular/common';
 import { Component, Renderer2, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
-declare function greetAdmin(): void;
-declare function greetMember(): void;
+
+declare const greetAdmin: () => void;
+declare const greetMember: () => void;
+
+
 
 @Component({
   selector: 'app-landing-page',
@@ -13,12 +16,9 @@ declare function greetMember(): void;
   styleUrl: './landing-page.component.css'
 })
 export class LandingPageComponent implements OnInit {
-
-  // username: string = '';
-  // password: string = '';
   showPassword: boolean = false;
-
   loginForm!: FormGroup;
+
 
   constructor(private fb: FormBuilder, private router: Router) { }
 
@@ -28,6 +28,7 @@ export class LandingPageComponent implements OnInit {
       password: ['']
     });
   }
+
 
   togglePassword() {
     this.showPassword = true;

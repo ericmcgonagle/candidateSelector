@@ -1,4 +1,4 @@
-function greetAdmin() {
+window.greetAdmin = function() {
   const usernameInput = document.getElementById('username');
 
   if (usernameInput) {
@@ -7,12 +7,17 @@ function greetAdmin() {
   }
 }
 
-function greetMember() {
+window.greetMember = function() {
   const usernameInput = document.getElementById('username');
 
   if (usernameInput) {
     const inputValue = usernameInput.value;
   }
+}
+
+window.confirmClick = function(candidateName) {
+
+  alert(candidateName.value + ' has been selected');
 }
 
 
