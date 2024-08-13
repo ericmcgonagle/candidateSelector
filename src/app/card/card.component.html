@@ -1,6 +1,13 @@
-<div class="max-w-xs rounded overflow-hidden shadow-lg border">
+<div class="card-container max-w-xs rounded overflow-hidden shadow-lg border" (mouseover)="isHovered=true"
+  (mouseout)="isHovered=false">
   <img class="w-full h-auto max-h-64 object-cover" src={{content}} alt="Headshot">
   <div class="px-6 py-4">
     <div class="font-bold text-xl mb-2 text-center"> {{title}} </div>
+  </div>
+
+  <div class="overlay-content">
+    <div class="overlay-icons">
+      <img src="./assets/images/thumbsUp.jpg" alt="thumbsUp" (click)="onThumbsUpClick()">
+    </div>
   </div>
 </div>

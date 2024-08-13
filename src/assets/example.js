@@ -1,4 +1,4 @@
-function greetAdmin() {
+window.greetAdmin = function () {
   const usernameInput = document.getElementById('username');
 
   if (usernameInput) {
@@ -7,13 +7,16 @@ function greetAdmin() {
   }
 }
 
-function greetMember() {
+window.greetMember = function () {
   const usernameInput = document.getElementById('username');
 
   if (usernameInput) {
     const inputValue = usernameInput.value;
-    alert('Hello ' + inputValue + "\nPermissions: Member");
   }
+}
+
+window.confirmClick = function (candidateName) {
+  alert(candidateName + ' has been selected');
 }
 
 
