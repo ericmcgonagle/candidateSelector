@@ -1,14 +1,16 @@
 <body>
-    <div class="background-user-info-container">
-        <div class="header-container">
-            <p class="centered-inline-text rounded-full p-2 bg-gradient">Welcome&nbsp; <span
-                    class="replacement-text">{{memberName}}</span></p>
-        </div>
-    </div>
+    <div class="page-wrapper">
+            <div class="header-container">
+                <p class="centered-inline-text rounded-full p-2">Welcome&nbsp; <span
+                        class="replacement-text">{{memberName}}</span></p>
+            </div>
 
-    <div class="center-container">
-        <ng-container *ngFor="let card of cards">
-            <app-card [title]="card.title" [content]="card.content"></app-card>
-        </ng-container>
+        <div class="content-container">
+            <div class="center-container">
+                <ng-container *ngFor="let card of cards">
+                    <app-card [title]="card.title" [content]="card.content"></app-card>
+                </ng-container>
+            </div>
+        </div>
     </div>
 </body>
