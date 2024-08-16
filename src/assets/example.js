@@ -15,8 +15,12 @@ window.greetMember = function () {
   }
 }
 
-window.confirmClick = function (candidateName) {
+window.confirmUpvoteClick = function (candidateName) {
   alert(candidateName + ' has been selected');
+}
+
+window.confirmDownvoteClick = function (candidateName) {
+  alert(candidateName + ' has been removed');
 }
 
 

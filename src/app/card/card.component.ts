@@ -2,7 +2,8 @@ import { Component, Input } from '@angular/core';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { CommonModule } from '@angular/common';
 
-declare const confirmClick: (canddiateName: string) => void;
+declare const confirmUpvoteClick: (canddiateName: string) => void;
+declare const confirmDownvoteClick: (canddiateName: string) => void;
 
 @Component({
   selector: 'app-card',
@@ -17,6 +18,10 @@ export class CardComponent {
   isHovered = false;
 
   onThumbsUpClick() {
-    confirmClick(this.title);
+    confirmUpvoteClick(this.title);
+  }
+
+  onThumbsDownClick() {
+    confirmDownvoteClick(this.title);
   }
 }
