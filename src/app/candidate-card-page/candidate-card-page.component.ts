@@ -3,6 +3,8 @@ import { ActivatedRoute } from '@angular/router';
 import { CardComponent } from '../card/card.component';
 import { CommonModule } from '@angular/common';
 
+declare const clearMemberVotes: (memberName: string) => void;
+
 @Component({
   selector: 'app-candidate-card-page',
   standalone: true,
@@ -24,5 +26,9 @@ export class CandidateCardPageComponent implements OnInit {
     this.route.params.subscribe(params => {
       this.memberName = params['memberName'];
     });
+  }
+
+  onClearClick() {
+    clearMemberVotes(this.memberName);
   }
 }

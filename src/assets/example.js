@@ -3,7 +3,6 @@ window.greetAdmin = function () {
 
   if (usernameInput) {
     const inputValue = usernameInput.value;
-    alert('Hello ' + inputValue + "\nPermissions: Admin");
   }
 }
 
@@ -21,6 +20,10 @@ window.confirmUpvoteClick = function (candidateName) {
 
 window.confirmDownvoteClick = function (candidateName) {
   alert(candidateName + ' has been removed');
+}
+
+window.clearMemberVotes = function (memberName) {
+  alert(memberName + ' votes have been cleared');
 }
 
 

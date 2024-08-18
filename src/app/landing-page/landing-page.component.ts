@@ -37,7 +37,12 @@ export class LandingPageComponent implements OnInit {
   }
 
   confirmAdminSignIn() {
-    greetAdmin();
+    if (this.loginForm.valid) {
+      greetAdmin();
+      this.router.navigate(['/admin-page']);
+    } else {
+      console.log("Invalid Credentials");
+    }
   }
 
   confirmMemberSignIn() {
