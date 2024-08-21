@@ -4,6 +4,7 @@ import { CardComponent } from '../card/card.component';
 import { CommonModule } from '@angular/common';
 
 declare const clearMemberVotes: (memberName: string) => void;
+declare const submitMemberVotes: (memberName: string) => void;
 
 @Component({
   selector: 'app-candidate-card-page',
@@ -30,5 +31,9 @@ export class CandidateCardPageComponent implements OnInit {
 
   onClearClick() {
     clearMemberVotes(this.memberName);
+  }
+
+  onSubmitClick() {
+    submitMemberVotes(this.memberName);
   }
 }

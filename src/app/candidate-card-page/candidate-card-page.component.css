@@ -84,16 +84,33 @@ html, body {
 }
 
 .clear-button {
-    padding: 6px 12px;
+    padding: 8px 16px;
     background-color: transparent;
     color: black;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: 0.3s ease;
+    margin: 10px;
 }
 
 .clear-button:hover {
     background-color: #000000;
-    color: white;
+    color: rgb(254, 0, 0);
+}
+
+.submit-button {
+    padding: 8px 16px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin: 10px;
+}
+
+.submit-button:hover {
+    background-color: #000000;
+    color: rgb(46, 253, 0);
 }
