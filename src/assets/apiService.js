@@ -1,5 +1,5 @@
 
-export async function fetchCandidates(url) {
+window.fetchCandidates = async function (url) {
     try {
         const response = await fetch(url);
         if (!response.ok) {
